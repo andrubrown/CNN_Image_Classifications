@@ -1,0 +1,23 @@
+=============== Training using DeCaf=====================
+all_lables = ['Others','Car','Pickup','SUV','Van','Minivan','Bus','Motorcycle']
+7 classes training dataset:
+Car	1769
+Pickup	1704
+SUV	1098
+Minivan	1000
+Van	500
+Bus	500
+Motorcycle	500
+7071 in total
+
+Step one: getSVMData.py, get x.train y.train
+Step two: trainSVMModel.py 7classes.model (95.268% accuracy)
+
+=============== Testing =================================
+
+1, scan the input image fold every 3 seconds
+2, classify it and count into the file "svcount.txt", remove images into the /processed
+3, find "done.txt"? write a empty file "done.txt" into the /result, end the program
+
+
+svcount.txt content is "Car	1" seperated by \t
